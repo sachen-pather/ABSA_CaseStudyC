@@ -8,11 +8,11 @@ This project implements a sophisticated Monte Carlo pricing engine for arithmeti
 
 ### Key Features
 
-- ** GPU Acceleration**: Up to 900x speedup over CPU implementations
-- ** Variance Reduction**: Antithetic variates for improved statistical efficiency  
-- ** Convergence Analysis**: Comprehensive testing across 9 orders of magnitude
-- ** Production Ready**: Optimized for RTX 3050/3060 class GPUs
-- ** Real-time Pricing**: Billion-simulation calculations in under 60 seconds
+- **GPU Acceleration**: Up to 900x speedup over CPU implementations
+- **Variance Reduction**: Antithetic variates for improved statistical efficiency  
+- **Convergence Analysis**: Comprehensive testing across 9 orders of magnitude
+- **Production Ready**: Optimized for RTX 3050/3060 class GPUs
+- **Real-time Pricing**: Billion-simulation calculations in under 60 seconds
 
 ##  Performance Results
 
@@ -391,6 +391,6 @@ When reporting performance or accuracy issues, please include:
 
 ---
 
-** Bottom Line**: This implementation demonstrates that modern GPU acceleration eliminates traditional trade-offs between computational accuracy and practical speed, making sophisticated Monte Carlo methods viable for real-time derivatives pricing in production environments.
+**Bottom Line**: This implementation demonstrates that modern GPU acceleration eliminates traditional trade-offs between computational accuracy and practical speed, making sophisticated Monte Carlo methods viable for real-time derivatives pricing in production environments.
 
-** Key Achievement**: 900x speedup enabling billion-simulation accuracy in under 60 seconds, transforming Asian option pricing from overnight batch processing to real-time analysis.
+**Key Achievement**: 900x speedup enabling billion-simulation accuracy in under 60 seconds, transforming Asian option pricing from overnight batch processing to real-time analysis.
