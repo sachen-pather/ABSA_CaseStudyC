@@ -4,8 +4,7 @@ A high-performance CUDA implementation for pricing Asian options using Monte Car
 
 ##  Project Overview
 
-This project implements a sophisticated Monte Carlo pricing engine for arithmetic Asian call options, comparing GPU-accelerated simulation against analytical approximations. The work showcases real-world computational finance techniques used in quantitative trading environments.
-
+This project implements a sophisticated Monte Carlo pricing engine for arithmetic Asian call options, comparing GPU-accelerated simulation against analytical approximations. The work showcases advanced computer science and computer engineering techniques including parallel computing architectures, memory hierarchy optimization, statistical variance reduction algorithms, and high-performance numerical computing. It demonstrates real-world computational finance applications while highlighting core CS/CE concepts such as SIMD/SIMT execution models, cache-efficient memory access patterns, thread synchronization, random number generation algorithms, and performance profiling methodologies used in quantitative trading environments.
 ### Key Features
 
 - **GPU Acceleration**: Up to 900x speedup over CPU implementations
