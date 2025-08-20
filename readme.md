@@ -217,7 +217,7 @@ For a derivatives desk pricing 1,000 Asian options daily:
 ## 🔬 Validation & Testing
 
 ### Monte Carlo Convergence Validation
-![Convergence Validation](convergence_error_analysis.png)
+![Convergence Validation](focused_asian_analysis.png)
 
 The error analysis confirms:
 - **Perfect 1/√n convergence**: Matches theoretical Monte Carlo behavior
