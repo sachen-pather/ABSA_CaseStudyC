@@ -2,19 +2,19 @@
 
 A high-performance CUDA implementation for pricing Asian options using Monte Carlo simulation with advanced variance reduction techniques. This project demonstrates the power of GPU acceleration in computational finance, achieving **20+ million simulations per second** on consumer hardware.
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project implements a sophisticated Monte Carlo pricing engine for arithmetic Asian call options, comparing GPU-accelerated simulation against analytical approximations. The work showcases real-world computational finance techniques used in quantitative trading environments.
 
 ### Key Features
 
-- **🚀 GPU Acceleration**: Up to 900x speedup over CPU implementations
-- **📊 Variance Reduction**: Antithetic variates for improved statistical efficiency  
-- **🔬 Convergence Analysis**: Comprehensive testing across 9 orders of magnitude
-- **⚡ Production Ready**: Optimized for RTX 3050/3060 class GPUs
-- **📈 Real-time Pricing**: Billion-simulation calculations in under 60 seconds
+- ** GPU Acceleration**: Up to 900x speedup over CPU implementations
+- ** Variance Reduction**: Antithetic variates for improved statistical efficiency  
+- ** Convergence Analysis**: Comprehensive testing across 9 orders of magnitude
+- ** Production Ready**: Optimized for RTX 3050/3060 class GPUs
+- ** Real-time Pricing**: Billion-simulation calculations in under 60 seconds
 
-## 📊 Performance Results
+##  Performance Results
 
 ![Monte Carlo Convergence Analysis](asian_convergence_analysis.png)
 
@@ -25,7 +25,7 @@ The convergence analysis demonstrates several key insights:
 - **GPU Scaling**: Consistent 20M simulations/second throughput across all scales
 - **Production Accuracy**: <0.01% final error with billion-simulation runs
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 ### Core Optimization Techniques
 
@@ -85,7 +85,7 @@ float z = curand_normal(&local_state);
 
 **Impact**: 10x faster than CPU random number generation
 
-## 📈 Convergence Analysis Results
+## Convergence Analysis Results
 
 | Simulations | Monte Carlo Price | Error vs Analytical | Performance |
 |-------------|------------------|-------------------|-------------|
@@ -96,7 +96,7 @@ float z = curand_normal(&local_state);
 
 The consistent ~17% error demonstrates that the analytical Black-Scholes approximation systematically overprices Asian options due to its inability to capture the volatility-dampening effect of arithmetic averaging.
 
-## 🔧 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
@@ -122,7 +122,7 @@ nvcc -O3 -arch=sm_86 asian_options.cu -o asian_options -lcurand
 - RTX 2060/2070/2080: `-arch=sm_75`  
 - GTX 1060/1070/1080: `-arch=sm_61`
 
-## 💰 Financial Model Details
+## Financial Model Details
 
 ### Asian Option Specification
 - **Underlying**: S₀ = $100.00
@@ -144,7 +144,7 @@ Option_Price = e^(-rT) * E[Payoff]
              ≈ e^(-rT) * (1/N) * Σ(Payoffᵢ)
 ```
 
-## 🧮 Mathematical Framework
+## Mathematical Framework
 
 ### Geometric Brownian Motion
 ```
@@ -165,7 +165,7 @@ For random variable X with antithetic pair X*:
 - Var[(X + X*)/2] < Var[X] when Cov(X,X*) < 0
 - Theoretical variance reduction: 50% for perfectly negatively correlated paths
 
-## 🎛️ Advanced Configuration
+## Advanced Configuration
 
 ### Performance Tuning Parameters
 
@@ -190,7 +190,7 @@ For random variable X with antithetic pair X*:
 | 100M | ~1GB | 5.2s |
 | 1B | ~4GB | 52.4s |
 
-## 📊 Business Applications
+## Business Applications
 
 ### Real-World Use Cases
 
@@ -214,7 +214,7 @@ For a derivatives desk pricing 1,000 Asian options daily:
 - **Monte Carlo**: $1,936 accurate pricing (90% improvement)  
 - **Time Savings**: 13 hours → 52 seconds per billion simulations
 
-## 🔬 Validation & Testing
+## Validation & Testing
 
 ### Monte Carlo Convergence Validation
 ![Convergence Validation](focused_asian_analysis.png)
@@ -243,7 +243,7 @@ Expected output:
 ✅ Monte Carlo algorithms working
 ```
 
-## 🚀 Scalability & Production Deployment
+## Scalability & Production Deployment
 
 ### Multi-GPU Scaling
 ```cpp
@@ -271,7 +271,7 @@ public:
 };
 ```
 
-## 🧪 Advanced Features & Extensions
+## Advanced Features & Extensions
 
 ### Stochastic Volatility Models
 ```cpp
@@ -309,7 +309,7 @@ __global__ void sobol_asian_kernel(float* results, int dimensions) {
 }
 ```
 
-## 📋 Troubleshooting Guide
+## Troubleshooting Guide
 
 ### Common Issues & Solutions
 
@@ -340,7 +340,7 @@ nvprof ./asian_options
 nvprof --metrics gld_efficiency,gst_efficiency ./asian_options
 ```
 
-## 📚 Academic References & Further Reading
+## Academic References & Further Reading
 
 ### Core References
 1. **Hull, J.C.** (2018). *Options, Futures, and Other Derivatives* (10th ed.)
@@ -355,7 +355,7 @@ nvprof --metrics gld_efficiency,gst_efficiency ./asian_options
 1. **Hammersley, J.M.** (1964). "Monte Carlo Methods"
 2. **Boyle, P.** (1977). "Options: A Monte Carlo approach"
 
-## 📄 License & Citation
+## License & Citation
 
 This implementation is provided for educational and research purposes. When using this code in academic work, please cite:
 
@@ -368,7 +368,7 @@ This implementation is provided for educational and research purposes. When usin
 }
 ```
 
-## 🤝 Contributing & Support
+## Contributing & Support
 
 ### Development Environment Setup
 1. Install CUDA Toolkit 11.0+
@@ -391,6 +391,6 @@ When reporting performance or accuracy issues, please include:
 
 ---
 
-**🎯 Bottom Line**: This implementation demonstrates that modern GPU acceleration eliminates traditional trade-offs between computational accuracy and practical speed, making sophisticated Monte Carlo methods viable for real-time derivatives pricing in production environments.
+** Bottom Line**: This implementation demonstrates that modern GPU acceleration eliminates traditional trade-offs between computational accuracy and practical speed, making sophisticated Monte Carlo methods viable for real-time derivatives pricing in production environments.
 
-**⚡ Key Achievement**: 900x speedup enabling billion-simulation accuracy in under 60 seconds, transforming Asian option pricing from overnight batch processing to real-time analysis.
+** Key Achievement**: 900x speedup enabling billion-simulation accuracy in under 60 seconds, transforming Asian option pricing from overnight batch processing to real-time analysis.
