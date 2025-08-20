@@ -16,7 +16,7 @@ This project implements a sophisticated Monte Carlo pricing engine for arithmeti
 
 ## 📊 Performance Results
 
-![Monte Carlo Convergence Analysis](convergence_analysis_comprehensive.png)
+![Monte Carlo Convergence Analysis](enhanced_asian_analysis.png)
 
 The convergence analysis demonstrates several key insights:
 
