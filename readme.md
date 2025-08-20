@@ -1,3 +1,5 @@
+The full report can be viewed inside the repository
+
 # CUDA Asian Options Monte Carlo Pricer
 
 A high-performance CUDA implementation for pricing Asian options using Monte Carlo simulation with advanced variance reduction techniques. This project demonstrates the power of GPU acceleration in computational finance, achieving **20+ million simulations per second** on consumer hardware.
